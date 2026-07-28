@@ -4,22 +4,24 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://masudranahimel.com"),
 
   title: {
-    default: "Masud Rana Himel | Software Engineer",
+    default: "Masud Rana Himel",
     template: "%s | Masud Rana Himel",
   },
 
   description:
-    "Portfolio of Masud Rana Himel, an aspiring Software Engineer focused on modern web development, clean engineering and high-performance digital experiences.",
+    "Portfolio of Masud Rana Himel, an aspiring Software Engineer focused on modern web development, clean engineering, and high-performance digital experiences.",
 
   authors: [
     {
       name: "Masud Rana Himel",
+      url: "https://masudranahimel.com",
     },
   ],
 
@@ -39,11 +41,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://masudranahimel.com",
+    url: "/",
     siteName: "Masud Rana Himel",
     title: "Masud Rana Himel | Software Engineer",
     description:
-      "Portfolio of Masud Rana Himel, focused on modern web development, clean engineering and high-performance digital experiences.",
+      "Portfolio of Masud Rana Himel, focused on modern web development, clean engineering, and high-performance digital experiences.",
   },
 
   twitter: {

@@ -5,14 +5,15 @@ const technologies = ["Next.js", "TypeScript", "Tailwind CSS"];
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-28 sm:py-32">
+    <section
+      id="projects"
+      className="relative pb-12 pt-20 sm:pb-16 sm:pt-24 xl:pb-20 xl:pt-28"
+    >
       <Container>
         <SectionTitle
           eyebrow="Projects"
           title="Building through practice."
-          description={
-            "Projects where I apply what I'm learning, solve practical problems, and develop stronger engineering habits."
-          }
+          description="Projects where I apply what I'm learning, solve practical problems, and develop stronger engineering habits."
         />
 
         <div className="mt-16 border-t border-white/10 sm:mt-20">
