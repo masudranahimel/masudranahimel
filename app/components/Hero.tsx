@@ -20,10 +20,10 @@ export default function Hero() {
       />
 
       <Container className="flex min-h-screen items-center justify-center">
-        <section className="flex w-full max-w-5xl flex-col items-center px-0 pb-20 pt-32 text-center md:pb-24 md:pt-36">
+        <section className="flex w-full max-w-5xl flex-col items-center pb-20 pt-32 text-center md:pb-24 md:pt-36">
           {/* Eyebrow */}
           <p className="hero-reveal text-xs font-semibold uppercase tracking-[0.4em] text-zinc-500 sm:text-sm">
-            Software Engineer
+            Aspiring Software Engineer
           </p>
 
           {/* Name */}
@@ -33,8 +33,8 @@ export default function Hero() {
 
           {/* Description */}
           <p className="hero-reveal hero-delay-2 mt-7 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl sm:leading-9">
-            Building fast, modern and thoughtfully crafted web experiences with
-            clean engineering, thoughtful design and attention to performance.
+            Building modern web experiences with clean code, thoughtful design,
+            and a growing focus on performance and software engineering.
           </p>
 
           {/* CTA */}
@@ -56,7 +56,7 @@ export default function Hero() {
             <div className="relative rounded-full border border-white/10 bg-white/5 p-1.5 shadow-2xl shadow-black/50">
               <Image
                 src="/masudranahimel.jpg"
-                alt="Portrait of Masud Rana Himel"
+                alt="Masud Rana Himel"
                 width={320}
                 height={320}
                 priority
@@ -69,14 +69,17 @@ export default function Hero() {
           {/* Scroll indicator */}
           <a
             href="#about"
-            aria-label="Scroll to About section"
-            className="hero-reveal hero-delay-4 mt-14 flex flex-col items-center gap-3 text-zinc-500 transition-colors hover:text-white"
+            aria-label="Explore the About section"
+            className="hero-reveal hero-delay-4 mt-14 flex flex-col items-center gap-3 text-zinc-500 transition-colors duration-300 hover:text-white"
           >
             <span className="text-[11px] font-medium uppercase tracking-[0.3em]">
               Explore
             </span>
 
-            <span className="flex h-10 w-6 justify-center rounded-full border border-white/20">
+            <span
+              aria-hidden="true"
+              className="flex h-10 w-6 justify-center rounded-full border border-white/20"
+            >
               <span className="mt-2 h-1.5 w-1.5 animate-bounce rounded-full bg-current" />
             </span>
           </a>

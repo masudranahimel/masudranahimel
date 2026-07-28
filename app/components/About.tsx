@@ -3,80 +3,89 @@ import SectionTitle from "./ui/SectionTitle";
 
 export default function About() {
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="relative py-32 md:py-40">
       <Container>
         <SectionTitle
           eyebrow="About"
-          title="Engineering with purpose and precision."
-          description="I'm passionate about building modern web applications with clean code, thoughtful design and continuous learning."
+          title="Learning by building."
+          description="Developing the technical foundation, problem-solving skills, and engineering mindset required to build reliable software."
         />
 
-        <div className="mt-20 grid gap-16 lg:grid-cols-2 lg:items-start">
-          {/* Left */}
+        <div className="mt-20 grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
+          {/* Introduction */}
           <div>
-            <h3 className="text-3xl font-semibold leading-tight text-white md:text-4xl">
-              Building a strong foundation in modern software engineering.
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-zinc-500">
+              My approach
+            </p>
+
+            <h3 className="mt-5 max-w-xl text-3xl font-semibold leading-tight tracking-[-0.03em] text-white sm:text-4xl md:text-5xl">
+              Building the fundamentals before chasing complexity.
             </h3>
 
-            <p className="mt-8 text-lg leading-9 text-zinc-400">
-              I'm Masud Rana Himel, an aspiring Software Engineer from
-              Bangladesh. My goal is to master modern web technologies and build
-              high-quality digital products that are fast, scalable and
-              user-friendly.
-            </p>
+            <div className="mt-8 max-w-2xl space-y-6 text-lg leading-9 text-zinc-400">
+              <p>
+                I&apos;m Masud Rana Himel, an aspiring Software Engineer from
+                Bangladesh. I learn by building projects, understanding how
+                things work, and turning that knowledge into practical
+                experience.
+              </p>
 
-            <p className="mt-6 text-lg leading-9 text-zinc-400">
-              Every project I build is an opportunity to improve my problem
-              solving, engineering practices and design skills while following
-              industry standards.
-            </p>
+              <p>
+                My current work centers on web development while I strengthen
+                the broader foundations of software engineering. I care about
+                readable code, maintainable architecture, performance, and
+                creating interfaces that feel intentional.
+              </p>
+
+              <p>
+                The goal is simple: keep improving, build more capable software,
+                and develop the engineering judgment needed to solve real
+                problems well.
+              </p>
+            </div>
           </div>
 
-          {/* Right */}
-          <div className="grid gap-6">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]">
-              <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-                Focus
-              </p>
+          {/* Principles */}
+          <div className="border-t border-white/10 lg:border-l lg:border-t-0 lg:pl-12">
+            <div className="divide-y divide-white/10">
+              <div className="py-8 lg:pt-0">
+                <span className="text-sm font-medium text-zinc-600">01</span>
 
-              <h4 className="mt-3 text-2xl font-semibold text-white">
-                Frontend Development
-              </h4>
+                <h4 className="mt-4 text-xl font-semibold text-white">
+                  Build to understand
+                </h4>
 
-              <p className="mt-3 leading-8 text-zinc-400">
-                Building responsive, accessible and beautiful user interfaces
-                using modern web technologies.
-              </p>
-            </div>
+                <p className="mt-3 leading-7 text-zinc-400">
+                  Turning concepts into working projects to understand not only
+                  what works, but why it works.
+                </p>
+              </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]">
-              <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-                Learning
-              </p>
+              <div className="py-8">
+                <span className="text-sm font-medium text-zinc-600">02</span>
 
-              <h4 className="mt-3 text-2xl font-semibold text-white">
-                Modern JavaScript Ecosystem
-              </h4>
+                <h4 className="mt-4 text-xl font-semibold text-white">
+                  Engineer for clarity
+                </h4>
 
-              <p className="mt-3 leading-8 text-zinc-400">
-                Continuously improving my knowledge through projects, practice
-                and real-world development workflows.
-              </p>
-            </div>
+                <p className="mt-3 leading-7 text-zinc-400">
+                  Writing structured, maintainable code and making deliberate
+                  technical decisions instead of adding unnecessary complexity.
+                </p>
+              </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]">
-              <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-                Goal
-              </p>
+              <div className="py-8">
+                <span className="text-sm font-medium text-zinc-600">03</span>
 
-              <h4 className="mt-3 text-2xl font-semibold text-white">
-                Become a Professional Software Engineer
-              </h4>
+                <h4 className="mt-4 text-xl font-semibold text-white">
+                  Improve continuously
+                </h4>
 
-              <p className="mt-3 leading-8 text-zinc-400">
-                Creating high-quality applications and preparing for software
-                engineering opportunities in international companies.
-              </p>
+                <p className="mt-3 leading-7 text-zinc-400">
+                  Strengthening fundamentals, learning from each project, and
+                  gradually taking on more challenging engineering problems.
+                </p>
+              </div>
             </div>
           </div>
         </div>

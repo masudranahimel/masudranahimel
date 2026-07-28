@@ -27,6 +27,7 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
       <nav
+        aria-label="Main navigation"
         className={`mx-auto max-w-6xl rounded-3xl border transition-all duration-500 ${
           scrolled
             ? "border-white/10 bg-black/70 shadow-2xl shadow-black/20 backdrop-blur-2xl"
@@ -40,7 +41,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <a
-            href="#"
+            href="#home"
             onClick={closeMenu}
             className="text-sm font-semibold tracking-tight text-white md:text-base"
           >
@@ -82,7 +83,7 @@ export default function Navbar() {
             href="mailto:masudranahimel.info@gmail.com"
             className="hidden rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-zinc-200 md:inline-flex"
           >
-            Hire Me
+            Email Me
           </a>
 
           {/* Mobile Menu Button */}
@@ -92,6 +93,7 @@ export default function Navbar() {
               menuOpen ? "Close navigation menu" : "Open navigation menu"
             }
             aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setMenuOpen((open) => !open)}
             className="flex h-9 w-9 flex-col items-center justify-center gap-1.5 rounded-full border border-white/10 bg-white/5 md:hidden"
           >
@@ -111,6 +113,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         <div
+          id="mobile-navigation"
           className={`grid transition-all duration-300 md:hidden ${
             menuOpen
               ? "grid-rows-[1fr] opacity-100"
@@ -164,9 +167,9 @@ export default function Navbar() {
               <a
                 href="mailto:masudranahimel.info@gmail.com"
                 onClick={closeMenu}
-                className="mt-4 flex w-full justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-black"
+                className="mt-4 flex w-full justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-zinc-200"
               >
-                Hire Me
+                Email Me
               </a>
             </div>
           </div>

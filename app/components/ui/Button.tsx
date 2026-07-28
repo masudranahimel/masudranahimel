@@ -12,10 +12,10 @@ export default function Button({
   return (
     <a
       href={href}
-      className={`inline-flex rounded-full px-6 py-3 font-semibold transition duration-300 ${
+      className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
         variant === "primary"
-          ? "bg-white text-black hover:scale-105"
-          : "border border-zinc-700 text-white hover:border-white"
+          ? "bg-white text-black hover:scale-105 hover:bg-zinc-200"
+          : "border border-white/15 text-white hover:border-white/30 hover:bg-white/5"
       }`}
     >
       {children}
