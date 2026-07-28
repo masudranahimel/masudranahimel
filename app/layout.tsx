@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Masud Rana Himel, an aspiring Software Engineer focused on modern web development, clean engineering, and high-performance digital experiences.",
 
+  alternates: {
+    canonical: "/",
+  },
+
   authors: [
     {
       name: "Masud Rana Himel",
