@@ -13,13 +13,12 @@ export default function Projects() {
         <SectionTitle
           eyebrow="Projects"
           title="Building through practice."
-          description="Projects where I apply what I'm learning, solve practical problems, and develop stronger engineering habits."
+          description="Projects where I turn what I'm learning into working software and develop stronger engineering habits."
         />
 
         <div className="mt-16 border-t border-white/10 sm:mt-20">
-          {/* Project */}
           <article className="grid gap-12 py-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20 lg:py-16">
-            {/* Project Meta */}
+            {/* Project information */}
             <div>
               <div className="flex items-center gap-4">
                 <span className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500">
@@ -36,21 +35,27 @@ export default function Projects() {
               </h3>
 
               <p className="mt-5 max-w-xl text-base leading-8 text-zinc-400">
-                A personal portfolio built to apply modern web development
-                concepts through a real project, with an emphasis on responsive
-                design, reusable components, maintainable code, and performance.
+                My personal portfolio and an ongoing development project where I
+                apply web fundamentals while learning how modern applications
+                are structured, styled, optimized, and deployed.
               </p>
 
-              {/* Technologies */}
-              <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3">
-                {technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="text-sm text-zinc-500 transition-colors duration-300 hover:text-white"
-                  >
-                    {technology}
-                  </span>
-                ))}
+              {/* Technology stack */}
+              <div className="mt-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-600">
+                  Built with
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3">
+                  {technologies.map((technology) => (
+                    <span
+                      key={technology}
+                      className="text-sm text-zinc-500 transition-colors duration-300 hover:text-white"
+                    >
+                      {technology}
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {/* Status */}
@@ -60,11 +65,13 @@ export default function Projects() {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-zinc-400" />
                 </span>
 
-                <span className="text-sm text-zinc-500">In development</span>
+                <span className="text-sm text-zinc-500">
+                  Live · Continuously improving
+                </span>
               </div>
             </div>
 
-            {/* Preview */}
+            {/* Project preview */}
             <div className="relative">
               <div
                 aria-hidden="true"
@@ -72,7 +79,7 @@ export default function Projects() {
               />
 
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#080808]">
-                {/* Browser Bar */}
+                {/* Browser bar */}
                 <div className="flex h-11 items-center border-b border-white/10 px-4">
                   <div aria-hidden="true" className="flex gap-1.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
@@ -85,7 +92,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Website Preview */}
+                {/* Website preview */}
                 <div className="relative flex min-h-[300px] flex-col items-center justify-center overflow-hidden px-6 py-14 text-center sm:min-h-[360px]">
                   <div
                     aria-hidden="true"
@@ -117,7 +124,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Preview Caption */}
+              {/* Preview caption */}
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-xs text-zinc-600">Portfolio website</span>
 
@@ -127,7 +134,7 @@ export default function Projects() {
           </article>
         </div>
 
-        {/* Next Project */}
+        {/* Future projects */}
         <div className="border-t border-white/10 py-10">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <div>
@@ -136,7 +143,7 @@ export default function Projects() {
               </p>
 
               <p className="mt-3 text-lg font-medium text-zinc-400">
-                More projects coming as I continue building.
+                More projects will appear here as I continue building.
               </p>
             </div>
 
